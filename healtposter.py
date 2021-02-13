@@ -30,18 +30,18 @@ headers = {
 # 消息体
 payload = {
         "id": 0,
-        "userId": 8446208,
-        "reportTime": "2021-02-13",
-        "temperature": "36.5",
+        "userId": 8446208,              # 用户id    xxxxxxx
+        "reportTime": "2021-02-13",     # 上报日期  yyyy-mm-dd
+        "temperature": "36.5",          # 体温      xx.x
         "DoNucleicAcidTest": "否",
         "FirstResult": "",
         "SecondResult": "",
         "SelfCurrentArea": "否",
         "DoNucleicAcidTestReason": "",
-        "selfHealthy": "无",  
-        "familyHealthy": "无",
-        "helpMethed": "无",
-        "testPerson": "刘宇轩",
+        "selfHealthy": "无",            # 是否出现下列四种情况？                  1.确诊  2.疑似  3.密切接触者  4.发热人员  5.无
+        "familyHealthy": "无",          # 你的家人朋友是否出现下列四种情况？      1.确诊  2.疑似  3.密切接触者  4.发热人员  5.无
+        "helpMethed": "无",             # 救助及防护措施                          1.住院治疗  2.定点隔离  3.无
+        "testPerson": "",               # 检测人姓名
         "status": 0,
         }
 
@@ -51,12 +51,13 @@ print(rp.json())
 localtime = time.localtime(time.time())
 time = time.strftime('%m-%d',time.localtime(time.time()))
 
+# 用于日志保存 (date.json.log)
 jf = open(str(time) + '.json.log', 'w')
 print(str(rp.json()), file=jf)
 jf.close()
 
-os.system("figlet complete")
-
+#os.system("figlet complete")
+print("[!] upload complete")
 
 
 
