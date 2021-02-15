@@ -43,5 +43,23 @@
    A.住院治疗 B.定点隔离 C.无
 
 ---
+### 使用说明
+运行
+```shell
+python3 healtposter.py
+```
 
+使用
+```shell
+日期： 2021-XX-XX, XX:XX
+体温： 
+```
+输入体温后回车即可，之后会返回提交状态。
+提交成功 或 今天已经提交过了。
+
+
+
+
+(后续功能开发中。)
+---
 <u>Copyright (c) 2018 NeTFox. power by ALex Zerkio.</u>
