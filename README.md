@@ -8,22 +8,22 @@
 
 ```json
 {
-	"userId": "",        // 1
-	"temperature": "",   // 2
+	"userId": "",
+	"temperature": "",
 	"selfHealthy": "",
 	"familyHealthy": "",
 	"helpMethed": "",
-	"testPerson": ""     // 3
+	"testPerson": ""
 }
 ```
 
-1. **上报人 (id)**
+1. **上报人 (userId)**
 
-2. **体温**
+2. **体温 (temperature)**
 
    格式：xx.x
 
-3. **检测人**
+3. **检测人 (testPerson)**
 
 ~~4. **是否出现下列四种情况？(默认无)**~~
 
