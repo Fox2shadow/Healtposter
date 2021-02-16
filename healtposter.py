@@ -30,7 +30,7 @@ headers = {
 # title
 localtime = time.localtime(time.time())
 lotime = time.strftime("%H:%M", time.localtime(time.time()))
-svtime = time.strftime("%Y-%m-%d", time.localtime(time.time()))
+RPTime = time.strftime("%Y-%m-%d", time.localtime(time.time()))
 print("日期：", svtime, lotime)
 temp = input("体温： ")
 
@@ -38,7 +38,7 @@ temp = input("体温： ")
 payload = {
         "id": 0,
         "userId": 000000,
-        "reportTime": svtime,
+        "reportTime": RPTime,
         "temperature": temp,
         "DoNucleicAcidTest": "否",
         "FirstResult": "",
