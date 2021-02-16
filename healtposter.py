@@ -31,7 +31,7 @@ headers = {
 localtime = time.localtime(time.time())
 lotime = time.strftime("%H:%M", time.localtime(time.time()))
 RPTime = time.strftime("%Y-%m-%d", time.localtime(time.time()))
-print("日期：", svtime, lotime)
+print("日期：", RPTime, lotime)
 temp = input("体温： ")
 
 # 消息体
