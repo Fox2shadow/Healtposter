@@ -8,12 +8,12 @@
 
 ```json
 {
-	"userId": "",        # 1
-	"temperature": "",   # 2
+	"userId": "",        // 1
+	"temperature": "",   // 2
 	"selfHealthy": "",
 	"familyHealthy": "",
 	"helpMethed": "",
-	"testPerson": ""     # 3
+	"testPerson": ""     // 3
 }
 ```
 
