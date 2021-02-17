@@ -1,5 +1,5 @@
-# Copyright <c> 2018 NeTFoX
-# Power by ALex Zerkio
+# Copyright <c> 2018 NeTFoX.
+# Powered by ALex Zerkio
 #
 
 import os
